@@ -1,0 +1,75 @@
+import random
+
+def squareroot(m,k,n) :
+    temp = 0
+    total = 0
+    i = 0
+    aver = 0
+    
+    if  m > k :
+        temp = m
+        m = k
+        k = temp
+    while i < n :
+        num = random.randint(m,k)
+        total = total + num
+        i = i + 1
+    aver = total / i
+    print(aver*aver)
+    
+m=int(input('请输入一个整数,以回车结束.'))
+k=int(input('请输入另一个整数,以回车结束.'))
+n=int(input('请输入整数个数,以回车结束.'))
+
+squareroot(m,k,n)
+
+
+
+import random
+import math
+
+def sigma(m,k,n) :
+    temp = 0
+    total_1 = 0
+    total_2 = 0
+    i = 0
+    
+    if  m > k :
+        temp = m
+        m = k
+        k = temp
+    while i < n :
+        num = random.randint(m,k)
+        total_1 = total_1 + math.log(num)
+        total_2 = total_2 + 1/math.log(num)
+        i = i + 1
+    print('西格玛log(随机整数)为:',total_1)
+    print('西格玛1/log(随机整数)为:',total_2)
+    
+m=int(input('请输入一个整数,以回车结束.'))
+k=int(input('请输入另一个整数,以回车结束.'))
+n=int(input('请输入整数个数,以回车结束.'))
+
+sigma(m,k,n)
+
+
+
+import random
+
+def add(n) :
+    i = 0
+    s = 0
+    k = 0
+    m = 0
+    num = random.randint(1,9)
+    
+   
+    while i < n :
+        m = num + m * 10
+        s = s + m
+        i = i + 1  
+    print(s)
+    
+n=int(input('请输入整数个数,以回车结束.'))
+
+add(n)
