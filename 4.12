@@ -1,0 +1,35 @@
+numbers = []
+n = int(input('请输入一个整数，表示将要输入数字的个数，回车结束。'))
+total = 0
+i = 0
+
+for i in range(n):
+    number = int(input('请输入一个整数，回车结束。'))
+    numbers.append(number)
+    
+for number in numbers:
+    total += number
+    
+print(total)
+
+
+
+numbers = []
+n = int(input('请输入一个整数，表示将要输入数字的个数，回车结束。'))
+i = 0
+min1 = 0
+
+for i in range(1):
+    number = int(input('请输入一个整数，回车结束。'))
+    min1 = number
+    numbers.append(number)
+    
+for i in range(n-1):
+    number = int(input('请输入一个整数，回车结束。'))
+    numbers.append(number)
+    
+for number in numbers:
+    if number < min1 :
+        min1 = number
+    
+print(min1)    
