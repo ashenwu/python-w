@@ -33,3 +33,19 @@ for number in numbers:
         min1 = number
     
 print(min1)    
+
+
+words = []
+n = int(input('请输入一个整数，表示将要输入元素/对象的个数，回车结束。'))
+i = 0
+
+for i in range(n):
+    word = input('请输入一个元素/对象，回车结束。')
+    words.append(word)
+    
+m = input('请输入一个元素/对象用以判断是否在list中，回车结束。')
+if m in words :
+    print(words.index(m)) 
+
+if m not in words :
+    print(-1)
